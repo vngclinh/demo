@@ -67,7 +67,7 @@ a {
   display: block;
 }
 .nav {
-  background-color: #fff;
+  background-color: var(--heading-color);
   position: sticky;
   top: 0;
   width: 100%;
@@ -81,6 +81,19 @@ a {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng ở dưới */
 }
 i {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-right: 3px;
+}
+.dn-text {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  /* margin: 0px 3vw; */
+  transition: all 0.5s ease;
+  display: block;
+}
+.search i {
   color: var(--heading-color);
   font-size: 1.6rem;
   margin-right: 3px;
@@ -94,8 +107,17 @@ i {
   gap: 2vw;
   align-items: center;
 }
-.navbar a {
-  color: var(--primary-color);
+.navbar .category {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 2rem 3vw;
+  /* margin: 0px 3vw; */
+  transition: all 0.5s ease;
+  display: block;
+}
+.navbar .subnav-link {
+  color: #000;
   font-size: 1.6rem;
   font-weight: 400;
   padding: 2rem 3vw;
@@ -128,7 +150,7 @@ i {
   display: block;
 }
 .register a:hover {
-  color: var(--heading-color);
+  /* color: var(--heading-color); */
   text-shadow: 0.5px 0 0 currentColor;
 }
 .logo {
@@ -147,6 +169,7 @@ i {
   max-height: 100%; /* Không vượt quá cha */
 }
 .search {
+  background-color: #fff;
   display: flex;
   padding: 1rem;
   cursor: pointer;
