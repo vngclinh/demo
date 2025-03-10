@@ -28,13 +28,95 @@
   <body style="height: 5000px">
     <!-- header -->
     <header class="header fixed">
-      <div class="header-detail">
-        <div class="body">
-          <!-- logo -->
-          <img class="logo" src="./assets/img/logo.jpg" alt="The Outsider" />
-        </div>
+      <div class="header banner">
+        <img
+          src="./assets/img/banner.jpg"
+          alt="the outsider"
+          class="banner-logo"
+        />
       </div>
     </header>
+
+    <div class="split-line"></div>
+
+    <nav class="nav">
+      <div id="backtohome">
+        <a href="#">
+          <img class="logo" src="./assets/img/logo.jpg" alt="" />
+        </a>
+      </div>
+      <a href="#" class="home"><i class="fa-solid fa-house"></i></a>
+      <ul class="navbar">
+        <li class="main-category">
+          <a href="#!" class="category">Thời sự</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Chính trị</a></li>
+            <li><a class="subnav-link" href="#">Nhân sự</a></li>
+            <li><a class="subnav-link" href="#">Dân sinh</a></li>
+            <li><a class="subnav-link" href="#">Giao thông</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="#!"  class="category">Giáo dục</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Tin tức</a></li>
+            <li><a class="subnav-link" href="#">Tuyển sinh</a></li>
+            <li><a class="subnav-link" href="#">Du học</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="#!"  class="category">Công nghệ</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">AI</a></li>
+            <li><a class="subnav-link" href="#">Chuyển đổi số</a></li>
+            <li><a class="subnav-link" href="#">Nhịp sống số</a></li>
+            <li><a class="subnav-link" href="#">Thiết bị</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="#!"  class="category">Kinh doanh</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Quốc tế</a></li>
+            <li><a class="subnav-link" href="#">Doanh nghiệp</a></li>
+            <li><a class="subnav-link" href="#">Chứng khoán</a></li>
+            <li><a class="subnav-link" href="#">Hàng hóa</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="#!"  class="category">Giải trí</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Phim</a></li>
+            <li><a class="subnav-link" href="#">Nhạc</a></li>
+            <li><a class="subnav-link" href="#">Thời trang</a></li>
+            <li><a class="subnav-link" href="#">Làm đẹp</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="#!"  class="category">Thể thao</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Bóng đá</a></li>
+            <li><a class="subnav-link" href="#">Lịch thi đấu</a></li>
+            <li><a class="subnav-link" href="#">Các môn khác</a></li>
+            <li><a class="subnav-link" href="#">Esports</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="register">
+        <div class="search">
+          <input type="text" placeholder="Tìm kiếm...">
+          <a href="#!">
+            <i class="fa-solid fa-magnifying-glass">
+              </i>
+              </a>
+          </i>
+        </div>
+        <a href="#!" class="dn-text"><i class="fa-solid fa-user"></i>Đăng nhập</a>
+        <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </nav>
+    <div class="split-line"></div>
+
+    <!-- bài báo -->
     <div class="content">
       <div class="header-content">
         <div class="tag">
@@ -70,7 +152,11 @@
               có mối quan hệ bất chính mà đã kéo dài 5 tháng qua.
             </p>
             <figure>
-              <img src="./assets/img/anh1.jpg" alt="Ảnh cắt từ clip" />
+              <img
+                src="./assets/img/anh1.jpg"
+                alt="Ảnh cắt từ clip"
+                class="news pic1"
+              />
               <figcaption>Ảnh cắt từ clip</figcaption>
             </figure>
             <br />
