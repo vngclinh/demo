@@ -277,11 +277,10 @@ form
     {
         top: 0;
     }
-
     .container.active .toggle-panel.toggle-left
     {
         left: 0;
-        right: -30%;
+        top: -30%;
     }
 
     .toggle-panel.toggle-right

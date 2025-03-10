@@ -218,7 +218,7 @@
     height: 256px;
     align-items: flex-start;
     border-bottom: 2px solid var(--background-box);
-    padding-top: 15px;
+    margin-bottom: 20px;
 }
 
 .page-content .main .search-res .container-block .main-container .main-body .main-block .result-container .result-block .result-image{
