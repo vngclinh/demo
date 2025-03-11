@@ -21,8 +21,8 @@ body {
 }
 
 .main .main-search {
-  width: 70%;
-  background-color: #e1e8f0;
+  width: 100%;
+  /* background-color: #e1e8f0; */
   position: relative;
 }
 .main .main-search .s-header {
