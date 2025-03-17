@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="search2.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 <body>
     <div class="main">
         <div class="main-search">
+            <div class="mobile-header">
+                <div class="filter-header" onclick="toggleFilter()">
+                    Tìm kiếm nâng cao
+                    <span id="filter-icon" class="filter-icon">
+                        <i class="fas fa-chevron-down fa-xs fa-fw"></i>
+                    </span> <!-- Mũi tên xuống -->
+                </div>
+            </div>
             <div class="s-header">
                 <div class="header1">
                     <h1><a href="">Trang chủ</a>
@@ -29,7 +38,7 @@
                 </div>
             </div>
             <div class="s-body">
-                <div class="l-s-body">
+                <div class="l-s-body" id="filterSection">
                     <div class="l-s-body-header">
                         Tìm kiếm nâng cao</h2>
                     </div>
@@ -38,28 +47,28 @@
                         <ul class = "inner">
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                         </ul>
                     </div>
@@ -68,58 +77,28 @@
                         <ul class = "inner">
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="filter">
-                        <h3>Loại thông tin</h3>
-                        <ul class = "inner">
-                            <li class = "inner-checkbox">
-                                <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
-                            </li>
-                            <li class = "inner-checkbox">
-                                <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
-                            </li>
-                            <li class = "inner-checkbox">
-                                <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
-                            </li>
-                            <li class = "inner-checkbox">
-                                <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
-                            </li>
-                            <li class = "inner-checkbox">
-                                <input value="Bài báo"  type="checkbox" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                         </ul>
                     </div>
@@ -128,18 +107,18 @@
                         <ul class = "inner">
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="radio" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="radio" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="radio" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                         </ul>
                     </div>
@@ -148,18 +127,18 @@
                         <ul class = "inner">
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="radio" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="radio" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                             <li class = "inner-checkbox">
                                 <input value="Bài báo"  type="radio" name="content-type"
-                                id="content-typearticles"> Bài báo
-                                </label>
+                                id="content-typearticles"> 
+                                <label for="content-type-articles">Bài báo</label>
                             </li>
                         </ul>
                     </div>
@@ -170,7 +149,7 @@
                     </div>
                 </div>
                 <div class="r-s-body">
-                    <p class = "feedback">Nếu bạn không có được kết quả như ý, hãy sử dụng biểu mẫu phản hồi của chúng tôi để chia sẻ truy vấn tìm kiếm và kết quả mong đợi với chúng tôi để chúng tôi có thể cải thiện.</p>
+                    <p class = "feedback">Chúng tôi đang liên tục làm việc để cải thiện kết quả tìm kiếm của mình. Nếu bạn không tìm thấy những gì bạn mong đợi, vui lòng sử dụng biểu mẫu phản hồi của chúng tôi để chia sẻ truy vấn tìm kiếm và kết quả mong đợi với chúng tôi để chúng tôi có thể cải thiện.</p>
                     <ul class="r-s-body-content">
                         <li class = "rsbc">
                             <a href=" " class ="rsbc-image">
@@ -307,5 +286,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
