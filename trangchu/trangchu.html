@@ -7,9 +7,115 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="trangchu.css">
+    <link rel="stylesheet" href="../the-outsider/assets/css/reset.css">
+    <link rel="stylesheet" href="../the-outsider/assets/css/responsive.css">
+    <link rel="stylesheet" href="header.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- embedded font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    <div class="container">
+    <header>
+       <!-- header -->
+    <header class="header fixed">
+      <div class="header banner">
+        <img
+          src="../the-outsider/assets/img/banner.jpg"
+          alt="the outsider"
+          class="banner-logo"
+        />
+      </div>
+    </header>
+
+    <div class="split-line"></div>
+
+    <nav class="nav">
+      <div id="backtohome">
+        <a href="#">
+          <img class="logo" src="../the-outsider/assets/img/logo.jpg" alt="" />
+        </a>
+      </div>
+      <a href="#" class="home"><i class="fa-solid fa-house"></i></a>
+      <ul class="navbar">
+        <li class="main-category">
+          <a href="#!" class="category">Thời sự</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Chính trị</a></li>
+            <li><a class="subnav-link" href="#">Nhân sự</a></li>
+            <li><a class="subnav-link" href="#">Dân sinh</a></li>
+            <li><a class="subnav-link" href="#">Giao thông</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="#!"  class="category">Giáo dục</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Tin tức</a></li>
+            <li><a class="subnav-link" href="#">Tuyển sinh</a></li>
+            <li><a class="subnav-link" href="#">Du học</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="../beo-dan/topic.html"  class="category">Công nghệ</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">AI</a></li>
+            <li><a class="subnav-link" href="#">Chuyển đổi số</a></li>
+            <li><a class="subnav-link" href="#">Nhịp sống số</a></li>
+            <li><a class="subnav-link" href="#">Thiết bị</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="#!"  class="category">Kinh doanh</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Quốc tế</a></li>
+            <li><a class="subnav-link" href="#">Doanh nghiệp</a></li>
+            <li><a class="subnav-link" href="#">Chứng khoán</a></li>
+            <li><a class="subnav-link" href="#">Hàng hóa</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="#!"  class="category">Giải trí</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Phim</a></li>
+            <li><a class="subnav-link" href="#">Nhạc</a></li>
+            <li><a class="subnav-link" href="#">Thời trang</a></li>
+            <li><a class="subnav-link" href="#">Làm đẹp</a></li>
+          </ul>
+        </li>
+        <li class="main-category">
+          <a href="#!"  class="category">Thể thao</a>
+          <ul class="subnav">
+            <li><a class="subnav-link" href="#">Bóng đá</a></li>
+            <li><a class="subnav-link" href="#">Lịch thi đấu</a></li>
+            <li><a class="subnav-link" href="#">Các môn khác</a></li>
+            <li><a class="subnav-link" href="#">Esports</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="register">
+        <div class="search">
+          <input type="text" placeholder="Tìm kiếm...">
+          <a href="../beo-dan/search2.html">
+            <i class="fa-solid fa-magnifying-glass">
+              </i>
+              </a>
+          </i>
+        </div>
+        <a href="../login/login_ver2.html" class="dn-text"><i class="fa-solid fa-user"></i>Đăng nhập</a>
+        <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </nav>
+    <div class="split-line"></div>
+    </header>
+
+      <div class="container">
         <!-- 1 -->
         <div class="row">
             <!-- Slider (50%) -->
@@ -184,9 +290,14 @@
         </div>
     </div>
 
+    <footer>
+
+    </footer>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="trangchu.js"></script>
+    <script src="../the-outsider/script.js"></script>
 </body>
 </html>

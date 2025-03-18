@@ -1,11 +1,20 @@
+ :root {
+  --font-heading: "Merriweather", "serif";
+}
+
 .row {
   display: flex;
-  flex: 1;
-  flex-wrap: wrap; /* Cho phép các ô xuống dòng khi không đủ chỗ */
+  flex-wrap: wrap;
 }
 
 .col-12, .col-lg-6, .col-lg-3 {
-  display: flex; /* Sử dụng flexbox cho các cột */
+  flex: 1 1 auto; /* Cho phép các cột mở rộng theo nội dung */
+}
+
+.container {
+  margin: 20px 0;
+  max-width: none; /* Loại bỏ giới hạn chiều rộng tối đa */
+  width: 100%; /* Cho phép container mở rộng toàn bộ chiều rộng */
 }
 
 
@@ -17,14 +26,14 @@
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  height: 350px;
+  height: 450px;
 }
 
 /* Slider container */
 .slider {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 450px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -42,11 +51,12 @@
 
 .slide img {
   width: 100%;
-  height: 350px;
+  height: 450px;
   object-fit: cover;
 }
 
 .caption {
+  font-family: var(--font-heading);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -54,7 +64,7 @@
   background: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 15px;
-  font-size: 12px;
+  font-size: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Giới hạn tối đa 2 dòng */
   -webkit-box-orient: vertical;
@@ -131,6 +141,7 @@
 }
 
 .news-item h2 {
+  font-family: var(--font-heading);
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0;
@@ -142,6 +153,7 @@
 }
 
 .news-item p {
+  font-family: var(--font-heading);
   font-size: 14px;
   color: #666;
   margin-bottom: 10px;
@@ -155,7 +167,7 @@
 
 .slider-1 {
   width: 100%;
-  height: 350px;
+  height: 450px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -173,6 +185,10 @@
 
 .slide-1 img {
   width: 100%;
-  height: 350px;
+  height: 450px;
   object-fit: cover;
+}
+
+.news-item h2, .news-item p, .caption {
+  text-align: left;
 }
