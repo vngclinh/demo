@@ -340,6 +340,55 @@ figcaption {
   font-weight: 600;
   cursor: pointer;
 }
+/* Phần hiển thị bình luận */
+
+.comment-item {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Avatar người dùng */
+.user-ava {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Nội dung bình luận */
+.comment-content {
+  background-color: #f1f1f1;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 70%;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Tạo hiệu ứng "đuôi" cho bình luận */
+.comment-content::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #f1f1f1;
+}
+
+/* Phần tiêu đề "Bình luận" */
+.comment-section .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+} 
 .others-new {
   margin: 3rem 15rem;
 }
