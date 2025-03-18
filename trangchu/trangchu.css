@@ -1,137 +1,17 @@
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  color: #000;
-  font-size: 1.6rem;
-  font-family: "Inter", sans-serif;
-}
-.btn:hover {
-  opacity: 0.9;
-}
-/* ==============common========== */
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-:root {
-  --heading-color: #325172;
-  --primary-color: #000;
+ :root {
   --font-heading: "Merriweather", "serif";
 }
-/* ==============banner================ */
-.header .banner {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: 10rem;
-  position: relative;
-}
-.banner-logo {
-  object-fit: cover;
-  margin: 1rem;
-  /* width: 50%;
 
-  height: auto; */
-}
-.header .fixed {
-  position: relative;
-}
-/* =============header============ */
-.nav.scrolled {
-  transition: 0.3s;
-  padding: 0 3%;
-}
-.nav.scrolled .home {
-  display: none;
-}
-.nav.scrolled #backtohome {
-  display: block;
-}
-.nav {
-  background-color: var(--heading-color);
-  position: sticky;
-  top: 0;
-  width: 100%;
-  right: 0;
-  z-index: 1000;
+.row {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 8%;
-  transition: all 0.5s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng ở dưới */
-}
-i {
-  color: #fff;
-  font-size: 1.6rem;
-  margin-right: 3px;
-}
-.dn-text {
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 400;
-  /* margin: 0px 3vw; */
-  transition: all 0.5s ease;
-  display: block;
-}
-.search i {
-  color: var(--heading-color);
-  font-size: 1.6rem;
-  margin-right: 3px;
-}
-.navbar {
-  display: flex;
-}
-.register {
-  margin-left: auto;
-  display: flex;
-  gap: 2vw;
-  align-items: center;
-}
-.navbar .category {
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 400;
-  padding: 2rem 3vw;
-  /* margin: 0px 3vw; */
-  transition: all 0.5s ease;
-  display: block;
-}
-.navbar .subnav-link {
-  color: #000;
-  font-size: 1.6rem;
-  font-weight: 400;
-  padding: 2rem 3vw;
-  /* margin: 0px 3vw; */
-  transition: all 0.5s ease;
-  display: block;
-}
-.navbar a:hover {
-  background: var(--heading-color);
-  color: #fff;
-  text-shadow: 0.3px 0 0 currentColor;
-}
-.subnav {
-  display: none;
-  position: absolute;
-  /* width: 13vw; */
-  background-color: rgba(231, 232, 231);
-  top: 100%;
-}
-.subnav li {
-  border-bottom: 1px solid #ccc; /* Đường kẻ màu xám */
+  flex-wrap: wrap;
 }
 
-/* Xóa border của mục cuối cùng để không có đường kẻ dưới cùng */
-.subnav li:last-child {
-  border-bottom: none;
+.col-12, .col-lg-6, .col-lg-3 {
+  flex: 1 1 auto; /* Cho phép các cột mở rộng theo nội dung */
 }
 
+<<<<<<< HEAD
 .main-category:hover .subnav {
   display: block;
 }
@@ -195,6 +75,16 @@ i {
 
 .news-item,
 .slideshow-container {
+=======
+.container {
+  margin: 20px 0;
+  max-width: none; /* Loại bỏ giới hạn chiều rộng tối đa */
+  width: 100%; /* Cho phép container mở rộng toàn bộ chiều rộng */
+}
+
+
+.news-item, .slideshow-container {
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   flex: 1; /* Các ô sẽ chia đều không gian và có chiều cao bằng nhau */
   background-color: #f4f4f4;
   border: 1px solid #ddd;
@@ -202,14 +92,22 @@ i {
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+<<<<<<< HEAD
   height: 350px;
+=======
+  height: 450px;
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
 }
 
 /* Slider container */
 .slider {
   position: relative;
   width: 100%;
+<<<<<<< HEAD
   height: 350px;
+=======
+  height: 450px;
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -227,11 +125,19 @@ i {
 
 .slide img {
   width: 100%;
+<<<<<<< HEAD
   height: 350px;
+=======
+  height: 450px;
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   object-fit: cover;
 }
 
 .caption {
+<<<<<<< HEAD
+=======
+  font-family: var(--font-heading);
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   position: absolute;
   bottom: 0;
   left: 0;
@@ -239,7 +145,11 @@ i {
   background: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 15px;
+<<<<<<< HEAD
   font-size: 12px;
+=======
+  font-size: 20px;
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Giới hạn tối đa 2 dòng */
   -webkit-box-orient: vertical;
@@ -248,8 +158,12 @@ i {
 }
 
 /* Nút điều hướng */
+<<<<<<< HEAD
 .prev,
 .next {
+=======
+.prev, .next {
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -262,6 +176,7 @@ i {
   transition: 0.3s;
 }
 
+<<<<<<< HEAD
 .prev:hover,
 .next:hover {
   background: rgba(0, 0, 0, 0.8);
@@ -273,6 +188,14 @@ i {
 .next {
   right: 10px;
 }
+=======
+.prev:hover, .next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
 
 /* Chấm tròn điều hướng */
 .dots {
@@ -294,11 +217,19 @@ i {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .active,
 .dot:hover {
   background-color: white;
 }
 
+=======
+.active, .dot:hover {
+  background-color: white;
+}
+
+
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
 .news-item {
   background: white;
   border-radius: 10px;
@@ -315,13 +246,21 @@ i {
 
 .news-item img {
   width: 100%;
+<<<<<<< HEAD
   height: 180px;
+=======
+  height: 180px; 
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   object-fit: cover;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
 .news-item h2 {
+<<<<<<< HEAD
+=======
+  font-family: var(--font-heading);
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0;
@@ -333,6 +272,10 @@ i {
 }
 
 .news-item p {
+<<<<<<< HEAD
+=======
+  font-family: var(--font-heading);
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   font-size: 14px;
   color: #666;
   margin-bottom: 10px;
@@ -343,9 +286,16 @@ i {
   text-overflow: ellipsis;
 }
 
+<<<<<<< HEAD
 .slider-1 {
   width: 100%;
   height: 350px;
+=======
+
+.slider-1 {
+  width: 100%;
+  height: 450px;
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -363,6 +313,16 @@ i {
 
 .slide-1 img {
   width: 100%;
+<<<<<<< HEAD
   height: 350px;
   object-fit: cover;
 }
+=======
+  height: 450px;
+  object-fit: cover;
+}
+
+.news-item h2, .news-item p, .caption {
+  text-align: left;
+}
+>>>>>>> f6b4d6be1cc0f78e71e1237a57dcf9108079f8f7
